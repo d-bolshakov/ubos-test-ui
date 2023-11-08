@@ -698,7 +698,7 @@
                                                                 ],
                                                                 "enableClientSideSearch": true,
                                                                 "isVisibleSearch": true,
-                                                                "isVisibleFilters": true,
+                                                                "isVisibleFilters": false,
                                                                 "isVisibleDownload": false,
                                                                 "isVisiblePagination": true,
                                                                 "isSortable": true,
