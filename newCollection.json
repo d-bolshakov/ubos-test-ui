@@ -1,0 +1,94 @@
+[
+    {
+        "id": "654a859968705776629c4799",
+        "name": "onClick",
+        "pageId": "home",
+        "body": "export default {\n\tonClickSubmitUpdate: async () => {\n\t\tawait updateUser.run()\n\t\tcloseModal(\"ModalUpdate\")\n\t\treturn getAllUsers.run()\n\t},\n\tonClickSubmitAdd: async () => {\n\t\tawait addUser.run()\n\t\tcloseModal(\"ModalAdd\")\n\t\treturn getAllUsers.run()\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "onClickSubmitUpdate",
+                "pageId": "home",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\tawait updateUser.run()\n\t\tcloseModal(\"ModalUpdate\")\n\t\treturn getAllUsers.run()\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "654a859968705776629c479a",
+                "id": "654a859968705776629c479a",
+                "collectionId": "654a859968705776629c4799",
+                "confirmBeforeExecute": false,
+                "applicationId": "test-user-ui",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.onClickSubmitUpdate",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "onClickSubmitAdd",
+                "pageId": "home",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\tawait addUser.run()\n\t\tcloseModal(\"ModalAdd\")\n\t\treturn getAllUsers.run()\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "654a859968705776629c479b",
+                "id": "654a859968705776629c479b",
+                "collectionId": "654a859968705776629c4799",
+                "confirmBeforeExecute": false,
+                "applicationId": "test-user-ui",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.onClickSubmit",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "test-user-ui",
+        "pluginType": "JS",
+        "_id": "654a859968705776629c4799",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    }
+]

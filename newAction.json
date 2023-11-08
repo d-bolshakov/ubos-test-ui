@@ -1,0 +1,685 @@
+[
+    {
+        "_id": "65490d3168705776629c4796",
+        "applicationId": "test-user-ui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "addUser",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "6547c6bf01031011000003a3",
+                    "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                },
+                "id": "6548f21701031011000003d1",
+                "invalids": [],
+                "isValid": true,
+                "name": "test-users-nr",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "test-users-nr",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                    "applicationId": "6547c6bf01031011000003a5",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"name\": \"{{InputAddName.text}}\",\n\t\"age\": \"{{InputAddAge.text}}\",\n\t\"country_id\": \"{{InputAddCountry.selectedOptionValue}}\"\t\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/users/"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "InputAddName.text",
+                "InputAddAge.text",
+                "InputAddCountry.selectedOptionValue"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-06T15:58:41.672Z",
+        "updatedAt": "2023-11-08T10:49:37.493Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65490f4c68705776629c4797",
+        "applicationId": "test-user-ui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getAllUsers",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "6547c6bf01031011000003a3",
+                    "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                },
+                "id": "6548f21701031011000003d1",
+                "invalids": [],
+                "isValid": true,
+                "name": "test-users-nr",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "test-users-nr",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                    "applicationId": "6547c6bf01031011000003a5",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": true,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/users"
+            },
+            "dynamicBindingPathList": [],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-06T16:07:40.988Z",
+        "updatedAt": "2023-11-08T10:48:23.601Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "name": "onClickSubmitUpdate",
+        "pageId": "home",
+        "executeOnLoad": false,
+        "actionConfiguration": {
+            "body": "async () => {\n\t\tawait updateUser.run()\n\t\tcloseModal(\"ModalUpdate\")\n\t\treturn getAllUsers.run()\n\t}",
+            "isAsync": true,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "clientSideExecution": true,
+        "_id": "654a859968705776629c479a",
+        "id": "654a859968705776629c479a",
+        "collectionId": "654a859968705776629c4799",
+        "confirmBeforeExecute": false,
+        "applicationId": "test-user-ui",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "onClick.onClickSubmitUpdate",
+        "isValid": true,
+        "jsonPathKeys": [
+            "() => {\n\t\t//write code here\n\t}"
+        ],
+        "pluginType": "JS"
+    },
+    {
+        "name": "onClickSubmitAdd",
+        "pageId": "home",
+        "executeOnLoad": false,
+        "actionConfiguration": {
+            "body": "async () => {\n\t\tawait addUser.run()\n\t\tcloseModal(\"ModalAdd\")\n\t\treturn getAllUsers.run()\n\t}",
+            "isAsync": true,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "clientSideExecution": true,
+        "_id": "654a859968705776629c479b",
+        "id": "654a859968705776629c479b",
+        "collectionId": "654a859968705776629c4799",
+        "confirmBeforeExecute": false,
+        "applicationId": "test-user-ui",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "onClick.onClickSubmitAdd",
+        "isValid": true,
+        "jsonPathKeys": [
+            "async () => {\n\t\t//use async-await or promises\n\t}"
+        ],
+        "pluginType": "JS"
+    },
+    {
+        "_id": "654a92e768705776629c479c",
+        "applicationId": "test-user-ui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getOneUser",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "6547c6bf01031011000003a3",
+                    "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                },
+                "id": "6548f21701031011000003d1",
+                "invalids": [],
+                "isValid": true,
+                "name": "test-users-nr",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "test-users-nr",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                    "applicationId": "6547c6bf01031011000003a5",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/users/"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "path"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-07T19:41:27.447Z",
+        "updatedAt": "2023-11-08T10:31:28.268Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "654ab19d94345fb14f1816de",
+        "applicationId": "test-user-ui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "deleteUser",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "6547c6bf01031011000003a3",
+                    "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                },
+                "id": "6548f21701031011000003d1",
+                "invalids": [],
+                "isValid": true,
+                "name": "test-users-nr",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "test-users-nr",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                    "applicationId": "6547c6bf01031011000003a5",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "DELETE",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "text/plain"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/users/{{TableUsers.selectedRow.user_id}}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "path"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "TableUsers.selectedRow.",
+                "TableUsers.selectedRow.user_id"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-07T21:52:29.455Z",
+        "updatedAt": "2023-11-07T21:53:55.561Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "654ab67c94345fb14f1816e2",
+        "applicationId": "test-user-ui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "updateUser",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "6547c6bf01031011000003a3",
+                    "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                },
+                "id": "6548f21701031011000003d1",
+                "invalids": [],
+                "isValid": true,
+                "name": "test-users-nr",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "test-users-nr",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                    "applicationId": "6547c6bf01031011000003a5",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "PUT",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"name\": \"{{InputUpdateName.text}}\",\n\t\"age\": \"{{InputUpdateAge.text}}\",\n\t\"country_id\": \"{{InputUpdateCountry.selectedOptionValue}}\"\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/users/{{TableUsers.selectedRow.id}}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "path"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "InputUpdateName.text",
+                "InputUpdateAge.text",
+                "InputUpdateCountry.selectedOptionValue",
+                "TableUsers.selectedRow.user_id",
+                "TableUsers.selectedRow.id"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-07T22:13:16.192Z",
+        "updatedAt": "2023-11-08T11:02:45.959Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "654b63a0e092009a3353d2a5",
+        "applicationId": "test-user-ui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getAllCountries",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "6547c6bf01031011000003a3",
+                    "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                },
+                "id": "6548f21701031011000003d1",
+                "invalids": [],
+                "isValid": true,
+                "name": "test-users-nr",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "test-users-nr",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                    "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                    "applicationId": "6547c6bf01031011000003a5",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/countries/"
+            },
+            "dynamicBindingPathList": [],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-08T10:32:00.567Z",
+        "updatedAt": "2023-11-08T10:48:13.830Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    }
+]

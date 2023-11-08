@@ -1,0 +1,316 @@
+{
+    "_id": "6548f93d68705776629c478e",
+    "name": "test-users-ui",
+    "slug": "test-user-ui",
+    "organizationId": "Org",
+    "isPublic": false,
+    "isMenu": false,
+    "isShowPlatformTag": true,
+    "createdAt": "2023-11-06T14:33:33.548Z",
+    "updatedAt": "2023-11-08T13:32:04.571Z",
+    "deleted": false,
+    "pages": [
+        {
+            "_id": "home",
+            "isDefault": true
+        }
+    ],
+    "policies": [
+        {
+            "permission": "makePublic:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "read:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "publish:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:applications",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "settings_data": {
+        "httpIns": [
+            {
+                "label": "POST |  | /users/",
+                "value": {
+                    "url": "/users/",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "6547c6bf01031011000003a3",
+                            "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "product_price": null,
+                            "cpu": 250,
+                            "ram": 512,
+                            "subscription_plan": "65095119f74e030011361ae3",
+                            "plan_id": "65095119f74e030011361ae3",
+                            "subscription_id": null,
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                        },
+                        "id": "6548f21701031011000003d1",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "test-users-nr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "test-users-nr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                            "applicationId": "6547c6bf01031011000003a5",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /users/:id",
+                "value": {
+                    "url": "/users/:id",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "6547c6bf01031011000003a3",
+                            "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "product_price": null,
+                            "cpu": 250,
+                            "ram": 512,
+                            "subscription_plan": "65095119f74e030011361ae3",
+                            "plan_id": "65095119f74e030011361ae3",
+                            "subscription_id": null,
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                        },
+                        "id": "6548f21701031011000003d1",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "test-users-nr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "test-users-nr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                            "applicationId": "6547c6bf01031011000003a5",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /users/:id",
+                "value": {
+                    "url": "/users/:id",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "6547c6bf01031011000003a3",
+                            "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "product_price": null,
+                            "cpu": 250,
+                            "ram": 512,
+                            "subscription_plan": "65095119f74e030011361ae3",
+                            "plan_id": "65095119f74e030011361ae3",
+                            "subscription_id": null,
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                        },
+                        "id": "6548f21701031011000003d1",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "test-users-nr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "test-users-nr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                            "applicationId": "6547c6bf01031011000003a5",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE |  | /users/:id",
+                "value": {
+                    "url": "/users/:id",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "6547c6bf01031011000003a3",
+                            "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "product_price": null,
+                            "cpu": 250,
+                            "ram": 512,
+                            "subscription_plan": "65095119f74e030011361ae3",
+                            "plan_id": "65095119f74e030011361ae3",
+                            "subscription_id": null,
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                        },
+                        "id": "6548f21701031011000003d1",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "test-users-nr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "test-users-nr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                            "applicationId": "6547c6bf01031011000003a5",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /users/",
+                "value": {
+                    "url": "/users/",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "6547c6bf01031011000003a3",
+                            "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "product_price": null,
+                            "cpu": 250,
+                            "ram": 512,
+                            "subscription_plan": "65095119f74e030011361ae3",
+                            "plan_id": "65095119f74e030011361ae3",
+                            "subscription_id": null,
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                        },
+                        "id": "6548f21701031011000003d1",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "test-users-nr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "test-users-nr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                            "applicationId": "6547c6bf01031011000003a5",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /countries/",
+                "value": {
+                    "url": "/countries/",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "6547c6bf01031011000003a3",
+                            "url": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "product_price": null,
+                            "cpu": 250,
+                            "ram": 512,
+                            "subscription_plan": "65095119f74e030011361ae3",
+                            "plan_id": "65095119f74e030011361ae3",
+                            "subscription_id": null,
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr"
+                        },
+                        "id": "6548f21701031011000003d1",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "test-users-nr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "test-users-nr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://test-users-nr-6547c6bf01031011000003a3.ubos.tech",
+                            "serviceId": "test-users-nr-ubos-p9cgb-test-users-nr",
+                            "applicationId": "6547c6bf01031011000003a5",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "gitApplicationMetadata": {
+        "browserSupportedRemoteUrl": "https://github.com/d-bolshakov/ubos-test-ui",
+        "defaultApplicationId": "test-user-ui",
+        "defaultBranchName": "main",
+        "isRepoPrivate": true,
+        "remoteUrl": "git@github.com:d-bolshakov/ubos-test-ui.git",
+        "repoName": "ubos-test-ui"
+    }
+}
